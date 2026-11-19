@@ -16,9 +16,9 @@ spring:
     show-sql: true
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/ms_catalogo
+    url: ${SPRING_DATASOURCE_URL}
     username: postgres
-    password: ${DB_PASSWORD}
+    password: ${SPRING_DATASOURCE_PASSWORD}
   eureka:
     client:
       service-url:
